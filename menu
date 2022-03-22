@@ -1,0 +1,83 @@
+bcible = False
+bidf = False
+bmdpf = False
+brec = False
+conf = 'Y'
+noconf = 'n' or 'N'
+
+while bcible ==False:
+
+    compte = 0
+
+    while compte == 0 :
+        print("Rentrer l'URL du compte cible:")
+        cible = str(input())
+        compte = 1
+
+    while compte == 1 :
+        print("L'URL-cible est", cible,'confirmer?')
+        print('Y/n')
+        cible_conf = str(input())
+
+      
+        if cible_conf == conf:
+            print('URL-cible confirmée')
+            compte = 2
+            bcible = True
+        elif cible_conf == noconf:
+            compte = 0
+        else:
+            compte = 1
+
+
+while bidf == False:
+
+    compte=0
+    
+    while compte == 0:
+        print("Rentrer votre identifiant de connexion Facebook")
+        idf = str(input())
+        compte = 1
+
+    while compte == 1:
+        print("Votre identifiant de connexion est", idf, ',confirmer?')
+        print('Y/n')
+        idf_conf = str(input())
+
+        if idf_conf == conf:
+            print('URL-cible confirmée')
+            compte = 2
+            bidf = True
+
+        elif idf_conf == noconf:
+            compte = 0
+        else:
+            compte = 1
+
+while bmdpf == False:
+
+    compte = 0
+
+    while compte == 0:
+        print("Rentrer le MDP de connexion Facebook:")
+        mdpf = str(input())
+        compte = 1
+
+    while compte == 1:
+        print("Le MDP est:", mdpf, ',confirmer?')
+        print('Y/n')
+        mdpf_conf = str(input())
+
+        if mdpf_conf == conf:
+            print('Mot de passe confirmé')
+            compte = 2
+            bmdpf = True
+            
+        elif mdpf_conf == noconf:
+            compte = 0
+        else:
+            compte = 1
+
+while brec == False:
+
+break
